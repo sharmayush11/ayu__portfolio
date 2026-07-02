@@ -35,3 +35,20 @@ const heroLines = [
     { n: 6, html: '&nbsp;&nbsp;status: <span class="str">"open to fresher opportunities"</span> <span class="com"></span>' },
     { n: 7, html: '};' },
 ];
+const codeEl = document.getElementById('heroCode');
+const gutterEl = document.getElementById('heroGutter');
+let lineIndex = 0;
+
+function typeNextLine() {
+    if (lineIndex >= heroLines.length) return;
+    const line = heroLines[lineIndex];
+    const row = document.createElement('div');
+    row.innerHTML = line.html;
+    row.style.minHeight = '1.9em';
+    codeEl.appendChild(row);
+    gutterEl.innerHTML += line.n + '<br>';
+    lineIndex++;
+    setTimeout(typeNextLine, 260);
+}
+typeNextLine();
+
