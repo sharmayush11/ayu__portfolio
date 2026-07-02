@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Sharma's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="titlebar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="titlebar-label">PORTFOLIO</span>
+            <button class="theme-toggle" id="themeToggle">THEME: dark</button>
+        </div>
+        <nav class="tabs" id="tabs">
+            <a class="tab active" data-target="home"><span class="ext-dot" style="background:#e37933"></span>Home</a>
+            <a class="tab" data-target="about"><span class="ext-dot" style="background:#f1e05a"></span>About</a>
+            <a class="tab" data-target="skills"><span class="ext-dot" style="background:#5fd4c4"></span>Skills</a>
+            <a class="tab" data-target="projects"><span class="ext-dot" style="background:#c792ea"></span>Projects</a>
+            <a class="tab" data-target="experience"><span class="ext-dot"
+                    style="background:#8a8fa3"></span>Experience</a>
+            <a class="tab" data-target="contact"><span class="ext-dot" style="background:#519aba"></span>Contact</a>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section id="home">
+        <div class="container">
+            <div class="hero-wrap">
+                <div class="gutter" id="heroGutter"></div>
+                <div class="hero-code" id="heroCode"></div>
+            </div>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">view projects</a>
+                <a href="#" class="btn btn-ghost" id="resumeBtn">↓ download resume</a>
+                <a href="#contact" class="btn btn-ghost">contact me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about">
+        <div class="container reveal">
+            <div class="eyebrow">About</div>
+            <h2>This is me :</h2>
+            <p class="about-text">
+                I’m <strong>Ayush</strong>, a 2022–26 Information Technology graduate with a strong passion for building modern, user-focused web applications. I’m currently seeking entry-level software development opportunities while continuously expanding my expertise in the <strong>MERN stack</strong>, with a primary focus on <strong>React</strong>.I have a strong foundation in <strong>HTML, CSS, JavaScript</strong>, and modern frontend development. My experience includes working with <strong>Vite, React Hooks, Context API, responsive design</strong>, and core JavaScript concepts such as <strong>asynchronous programming, Fetch API, callbacks, promises, and ES6+ features</strong>. I enjoy transforming ideas into clean, responsive, and user-friendly web applications with a focus on performance and maintainable code.I’m passionate about continuous learning, solving real-world problems through code, and building projects that enhance both my technical skills and user experience. My goal is to grow as a full-stack developer while contributing to impactful software solutions.
+                Alongside my academic journey, I’ve gained practical exposure through internships with <strong>DMRC</strong> and an <strong>IBM-affiliated program</strong>, where I developed a deeper understanding of real-world development practices and collaborative workflows.
+                I’m passionate about continuous learning, writing clean code, and building projects that solve real problems. My goal is to grow as a full-stack developer while creating impactful and user-friendly digital experiences.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills">
+        <div class="container reveal">
+            <div class="eyebrow">skills</div>
+            <h2>Tech Stack</h2>
+
+            <div class="skill-group">
+                <div class="skill-group-title">languages</div>
+                <div class="chip-row">
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">HTML</span>
+                    <span class="chip">CSS</span>
+                    <span class="chip">Java</span>
+                    <span class="chip">Python</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <div class="skill-group-title">frontend</div>
+                <div class="chip-row">
+                    <span class="chip">React (learning)</span>
+                    <span class="chip">Vite</span>
+                    <span class="chip">Context API</span>
+                    <span class="chip">Responsive Design</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <div class="skill-group-title">AI</div>
+                <div class="chip-row">
+                    <span class="chip">Generative AI</span>
+                    <span class="chip">RAG</span>
+                    <span class="chip">Langchan</span>
+                    <span class="chip">LLM models</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects">
+        <div class="container reveal">
+            <div class="eyebrow">projects</div>
+            <h2>Projects i've worked on:</h2>
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <div class="project-head">
+                        <span class="project-title">Mental Health chatbot</span>
+                        <span class="project-status status-progress">Live</span>
+                    </div>
+                    <p class="project-desc">
+                        AI-powered mental health chatbot for providing emotional support and personalized conversations — built with Python, JSON, and LLM APIs, featuring real-time responses and an intuitive user interface.
+                    </p>
+                    <!-- <div class="project-links">
+                        <a href="#">GitHub →</a>
+                        <a href="#">Live Demo →</a>
+                    </div> -->
+                </div>
+
+                <div class="project-card">
+                    <div class="project-head">
+                        <span class="project-title">Currency Converter</span>
+                        <span class="project-status status-live">live</span>
+                    </div>
+                    <p class="project-desc">
+                        Responsive currency converter that provides real-time exchange rates using a currency exchange API. Built with HTML, CSS, and JavaScript, featuring instant conversions, clean UI, and error handling.
+                    </p>
+                    <!-- <div class="project-links">
+                        <a href="#">GitHub →</a>
+                        <a href="#">Live Demo →</a>
+                    </div> -->
+                </div>
+
+                <div class="project-card">
+                    <div class="project-head">
+                        <span class="project-title">Next Project</span>
+                        <span class="project-status status-progress">planned</span>
+                    </div>
+                    <p class="project-desc">
+
+                    </p>
+                    <!-- <div class="project-links">
+                        <a href="#">GitHub →</a>
+                        <a href="#">Live Demo →</a>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience">
+        <div class="container reveal">
+            <div class="eyebrow">experience</div>
+            <h2>Experience</h2>
+
+            <div class="log-entry">
+                <div class="log-time">[earlier]</div>
+                <div class="log-body">
+                    <strong>IBM SkillBuild and CSRBOX Mirco-Internship</strong>
+                    <p>Completed an IBM-affiliated internship in Data Visualization using AI Tools, gaining practical experience in data analysis, AI-assisted visualization, dashboard development, and converting complex datasets into actionable insights.</p>
+                    <span class="log-tag">#internship #IBM</span>
+                </div>
+            </div>
+
+            <div class="log-entry">
+                <div class="log-time">[earlier]</div>
+                <div class="log-body">
+                    <strong>Intern — Delhi Metro Rail Corporation (DMRC)</strong>
+                    <p>Worked on assigned technical tasks during the internship; used it to build practical,
+                        cross-functional problem-solving skills alongside core CS interests.</p>
+                    <span class="log-tag">#internship #DMRC</span>
+                </div>
+            </div>
+
+            <div class="log-entry">
+                <div class="log-time">[latest]</div>
+                <div class="log-body">
+                    <strong>Intern-AWS Skill Builder</strong>
+                    <p>Successfully completed a Virtual IoT Cloud Engineer Internship through AWS Skill Builder. Developed practical knowledge of AWS IoT Core, MQTT communication, cloud-based device management, and secure IoT deployments while gaining hands-on experience with real-world IoT workflows.</p>
+                    <span class="log-tag">#internship #SkillBuilder</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" style="border-bottom:none;">
+        <div class="container reveal">
+            <div class="eyebrow">contact</div>
+            <h2>Ways to contact me: </h2>
+            <div class="terminal">
+                <!-- <span class="prompt">ayush@portfolio</span>:~$ echo "Naya role ya collaboration ke liye reach out
+                karo"<br>
+                <span class="prompt">ayush@portfolio</span>:~$ <span class="cursor"></span>
+            </div> -->
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com">✉ ayusharma1127@gmail.com</a>
+                <a href="https://github.com/sharmayush11">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="tel:+910000000000">📞 +91 8869815381</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        portfolio © <span id="year"></span> Ayush sharma
+    </footer>
+</body>
+
+</html>
